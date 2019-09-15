@@ -20,8 +20,8 @@
                 if (!audioElement) {
                     alert('Brakuje pliku audio')
                 }
-                audioElement.pause();
-                audioElement.currentTime = 0;
+                // audioElement.pause();
+                // audioElement.currentTime = 0;
                 audioElement.play();
             }
 

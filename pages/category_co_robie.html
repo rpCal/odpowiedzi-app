@@ -7,12 +7,12 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body oncopy="return false" oncut="return false" onpaste="return false">
     <div id="app">
         <div class="items-list-wrapper">
             <div class="item" data-text="Cześć">
                 <div class="ripple light" style="background-image: url('./assets/co_robie/img_czesc.jpg');">
-                    <img src="./assets/co_robie/img_czesc.jpg" alt="Aneta" />
+                    <!-- <img src="./assets/co_robie/img_czesc.jpg" alt="Aneta" /> -->
                 </div>
                 <audio controls>
                     <source src="./assets/co_robie/sound_czesc.ogg" type="audio/ogg">
@@ -21,7 +21,7 @@
             </div>
             <div class="item" data-text="Kupiłem chleb">
                 <div class="ripple light" style="background-image: url('./assets/co_robie/img_kupilem_chleb.jpg');">
-                    <img src="./assets/co_robie/img_kupilem_chleb.jpg" alt="Aneta" />
+                    <!-- <img src="./assets/co_robie/img_kupilem_chleb.jpg" alt="Aneta" /> -->
                 </div>
                 <audio controls>
                     <source src="./assets/co_robie/sound_kupilem_chleb.ogg" type="audio/ogg">
@@ -30,7 +30,7 @@
             </div>
             <div class="item" data-text="Układam kostke">
                 <div class="ripple light" style="background-image: url('./assets/co_robie/img_ukladam_kostke.jpg');">
-                    <img src="./assets/co_robie/img_ukladam_kostke.jpg" alt="Aneta" />
+                    <!-- <img src="./assets/co_robie/img_ukladam_kostke.jpg" alt="Aneta" /> -->
                 </div>
                 <audio controls>
                     <source src="./assets/co_robie/sound_ukladam_kostke.ogg" type="audio/ogg">
@@ -41,16 +41,18 @@
     </div>
 
 
-    <audio controls id="copied" style="display: none;">
-        <source src="./assets/sound_skopiowano.ogg" type="audio/ogg">
-        <source src="./assets/sound_skopiowano.mp3" type="audio/mpeg">
-    </audio>
+    <div id="copied">
+        <audio controls style="display: none;">
+            <source src="./assets/sound_skopiowano.ogg" type="audio/ogg">
+            <source src="./assets/sound_skopiowano.mp3" type="audio/mpeg">
+        </audio>
+    </div>
 
     <script type="text/javascript" src="./js/onready.js" charset="utf-8"></script>
     <script type="text/javascript" src="./js/ripple.js" charset="utf-8"></script>
     <script type="text/javascript" src="./js/long-press.js" charset="utf-8"></script>
     <script type="text/javascript" src="./js/copyToClipboard.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./js/category.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/category.js?v51133112" charset="utf-8"></script>
 </body>
 
 </html>
