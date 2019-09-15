@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Odpowiedzi app</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="./pages/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <style>
+        /* 
+        Device: 
+        Name: Samsung I9100 Galaxy S II
+        Dimensions: 125.3 x 66.1 x 8.5 mm (4.93 x 2.60 x 0.33 in)
+        
+        DISPLAY	
+        Type: Super AMOLED Plus capacitive touchscreen, 16M colors
+        Size: 4.3 inches, 52.6 cm2 (~63.5% screen-to-body ratio)
+        Resolution: 480 x 800 pixels, 5:3 ratio (~217 ppi density)
+        */
+    </style>
+
+    <div id="app">
+        <div class="categories-list-wrapper">
+
+
+
+            <div class="category" data-category="./pages/category_rodzina_i_znajomi.html" data-name="Rodzina i znajomi">
+                <div class="ripple light" style="background-image: url('./pages/assets/rodzina/img_category_rodzina_i_znajomi.jpg');">
+                    <img src="./pages/assets/rodzina/img_category_rodzina_i_znajomi.jpg" alt="Rodzina i znajomi" />
+                </div>
+
+                <audio controls>
+                    <source src="./pages/assets/rodzina/sound_rodzina_i_znajomi.ogg" type="audio/ogg">
+                    <source src="./pages/assets/rodzina/sound_rodzina_i_znajomi.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+
+            <div class="category" data-category="./pages/category_co_robie.html" data-name="Co robie">
+                <div class="ripple light" style="background-image: url('./pages/assets/co_robie/img_co_robie.jpg');">
+                    <img src="./pages/assets/co_robie/img_co_robie.jpg" alt="Co robie" />
+                </div>
+
+                <audio controls>
+                    <source src="./pages/assets/co_robie/sound_co_robie.ogg" type="audio/ogg">
+                    <source src="./pages/assets/co_robie/sound_co_robie.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./pages/js/onready.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./pages/js/ripple.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./pages/js/long-press.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./pages/js/categories.js" charset="utf-8"></script>
+</body>
+
+</html>
