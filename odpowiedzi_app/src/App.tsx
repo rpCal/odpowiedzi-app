@@ -1,5 +1,11 @@
 import React, { Component, useState } from "react";
-import { FaVolumeUp, FaPlusCircle, FaBackspace, FaPlay } from "react-icons/fa";
+import {
+  FaVolumeUp,
+  FaPlusCircle,
+  FaBackspace,
+  FaPlay,
+  FaCopy
+} from "react-icons/fa";
 import "./App.css";
 
 const listOfWords = [
@@ -7,17 +13,16 @@ const listOfWords = [
   { text: "Jola", image: "img_jola.jpg" },
   { text: "Aneta", image: "img_item_aneta.jpg" },
   { text: "Wiki", image: "img_wiktoria.jpg" },
-  { text: "Spotkałem", image: "img_czesc.jpg" },
-  { text: "Dzwonił", image: "img_dzwonil.jpg" },
   { text: "Wyjechać po Ciebie?", image: "img_wyjechac_po_ciebie.jpg" },
-  { text: "Wstawiłem ziemniaki", image: "img_wstawilem_ziemniaki.jpg" },
-  { text: "Czy ugotowac ziemniaki?", image: "img_czesc.jpg" },
+  { text: "Czy ugotowac ziemniaki?", image: "img_wstawilem_ziemniaki.jpg" },
   { text: "Pije kawe", image: "pije_kawe.jpg" },
   { text: "Chleb", image: "img_chleb.jpg" },
   { text: "Zostawiłem klucze", image: "img_zostawilem_klucze.jpg" },
   { text: "Jestem u kazika", image: "img_jestem_u_kazika.jpg" },
+  { text: "Gram w pasjansa", image: "img_gram_w_pasjansa.jpg" },
   { text: "Wracam o", image: "img_wracam_o.jpg" },
-  { text: "Dziękuje", image: "img_wracam_o.jpg" },
+  { text: "Dzwonił", image: "img_dzwonil.jpg" },
+  { text: "Dziękuje", image: "img_dziekuje.jpg" },
   { text: "Dobrze", image: "img_dobrze.jpg" },
   { text: "Układam kostke", image: "img_ukladam_kostke.jpg" },
   { text: "Kupiłem chleb", image: "img_kupilem_chleb.jpg" },
@@ -29,10 +34,10 @@ const listOfWords = [
   { text: "Tomek", image: "img_tomek.jpg" },
   { text: "Zuzia", image: "img_zuzia.jpg" },
   { text: "Adaś", image: "img_adas.jpg" },
-  { text: "Gram w pasjansa", image: "img_gram_w_pasjansa.jpg" },
   { text: "Oglądam telewizje", image: "img_ogladam_telewizje.jpg" },
   { text: "Barwy szczęscia", image: "img_barwy_szczescia.jpg" },
   { text: "M jak miłośc", image: "img_m_jak_milosc.jpg" },
+  { text: "Wstawiłem ziemniaki", image: "img_wstawilem_ziemniaki.jpg" },
 
   { text: "Upiekłaś ciastka", image: "img_ukladam_kostke.jpg" },
   { text: "ziemniaki", image: "img_czy_obraz_ziemniaki.jpg" },
@@ -52,7 +57,8 @@ const listOfWords = [
   { text: "Niedlugo", image: "img_czesc.jpg" },
   { text: "Woże drzewo", image: "img_czesc.jpg" },
   { text: "Naprawiam motor", image: "img_czesc.jpg" },
-  { text: "Kosze trawe", image: "img_czesc.jpg" }
+  { text: "Kosze trawe", image: "img_czesc.jpg" },
+  { text: "Spotkałem", image: "img_czesc.jpg" }
 ];
 
 class App extends Component<{}, { speechEnabled: boolean; queueWords: any[] }> {
@@ -83,6 +89,14 @@ class App extends Component<{}, { speechEnabled: boolean; queueWords: any[] }> {
         speakText(longWord);
       }
     };
+    const onCopyAll = () => {
+      if (this.state.queueWords.length > 0) {
+        const longWord = this.state.queueWords.map(word => word.text).join(" ");
+        copyText(longWord, () => {
+          alert("Skopiowano: " + longWord);
+        });
+      }
+    };
     return (
       <div>
         {this.state.speechEnabled ? (
@@ -91,6 +105,7 @@ class App extends Component<{}, { speechEnabled: boolean; queueWords: any[] }> {
               words={this.state.queueWords}
               onBackspace={onBackspace}
               onReadAll={onReadAll}
+              onCopyAll={onCopyAll}
             />
             <WorkItems
               words={listOfWords}
@@ -108,7 +123,7 @@ class App extends Component<{}, { speechEnabled: boolean; queueWords: any[] }> {
   }
 }
 
-const HeaderQueue = ({ words, onBackspace, onReadAll }) => {
+const HeaderQueue = ({ words, onBackspace, onReadAll, onCopyAll }) => {
   return (
     <div
       style={{
@@ -160,6 +175,21 @@ const HeaderQueue = ({ words, onBackspace, onReadAll }) => {
             }}
           >
             <FaBackspace color={"#bbb"} size={"30px"} />
+          </div>
+        ) : null}
+
+        {words && words.length > 0 ? (
+          <div
+            onClick={onCopyAll}
+            style={{
+              height: "80px",
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: "10px",
+              paddingRight: "10px"
+            }}
+          >
+            <FaCopy color={"#bbb"} size={"30px"} />
           </div>
         ) : null}
       </div>
@@ -235,6 +265,27 @@ const speakText = text => {
   window.speechSynthesis.speak(msg);
 };
 
+
+const copyText = (text, callback?) => {
+  var copy = function(e) {
+    e.preventDefault();
+    if (e.clipboardData) {
+      e.clipboardData.setData("text/plain", text);
+      if (callback) {
+        callback();
+      }
+    } else if ((window as any).clipboardData) {
+      (window as any).clipboardData.setData("Text", text);
+      if (callback) {
+        callback();
+      }
+    }
+  };
+  window.addEventListener("copy", copy);
+  document.execCommand("copy");
+  window.removeEventListener("copy", copy);
+};
+
 const WordItem = (props: { word: any; onWorkAddToQueue? }) => {
   const { word, onWorkAddToQueue } = props;
   const [textCopied, setTextCopied] = useState(false);
@@ -242,25 +293,12 @@ const WordItem = (props: { word: any; onWorkAddToQueue? }) => {
     speakText(text);
   };
   const onWorkCopyText = ({ text }) => {
-    var copy = function(e) {
-      e.preventDefault();
-      if (e.clipboardData) {
-        e.clipboardData.setData("text/plain", text);
-        setTextCopied(true);
-        setTimeout(() => {
-          setTextCopied(false);
-        }, 2000);
-      } else if ((window as any).clipboardData) {
-        (window as any).clipboardData.setData("Text", text);
-        setTextCopied(true);
-        setTimeout(() => {
-          setTextCopied(false);
-        }, 2000);
-      }
-    };
-    window.addEventListener("copy", copy);
-    document.execCommand("copy");
-    window.removeEventListener("copy", copy);
+    copyText(text, () => {
+      setTextCopied(true);
+      setTimeout(() => {
+        setTextCopied(false);
+      }, 2000);
+    });
   };
   return (
     <div
@@ -280,23 +318,38 @@ const WordItem = (props: { word: any; onWorkAddToQueue? }) => {
         }}
       >
         <div
+          onClick={() => onWorkAddToQueue(word)}
           style={{
             position: "absolute",
-            top: "10px",
-            right: "10px",
+            top: "0px",
+            right: "0px",
             transform: "translate(0, 0)",
-            backgroundColor: "rgba(0,0,0,0.5)",
-            borderRadius: 50,
-            width: "30px",
-            height: "30px",
+            width: "80px",
+            height: "80px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             zIndex: 5
           }}
-          onClick={() => onWorkAddToQueue(word)}
         >
-          <FaPlusCircle color={"#fff"} />
+          <div
+            style={{
+              position: "relative",
+              top: "0px",
+              right: "0px",
+              transform: "translate(0%, 0%)",
+              backgroundColor: "rgba(0,0,0,0.5)",
+              borderRadius: 50,
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 5
+            }}
+          >
+            <FaPlusCircle color={"#fff"} size={"25px"} />
+          </div>
         </div>
         <div
           onClick={() => onWorkPlaySound(word)}
@@ -344,10 +397,16 @@ const WordItem = (props: { word: any; onWorkAddToQueue? }) => {
             textAlign: "center"
           }}
         >
-          {word.text}
+          {word.text}{" "}
+          <FaCopy size={"25px"} color={"#fff"} style={{ marginLeft: 10 }} />
         </div>
 
-        {textCopied ? <div>Skopiowano</div> : null}
+        {textCopied ? (
+          <div style={{ textAlign: "center", padding: 10 }}>
+            <FaCopy size={"35px"} color={"#bbb"} /> <br />
+            Skopiowano
+          </div>
+        ) : null}
       </div>
     </div>
   );
