@@ -2,14 +2,25 @@ import React, { useState } from "react";
 import { FaVolumeUp, FaPlusCircle, FaCopy } from "react-icons/fa";
 import { speakText } from "./speakText";
 import { copyText } from "./copyText";
+import ReactGA from "react-ga";
 
 export const WordItem = (props: { word: any; onWorkAddToQueue? }) => {
   const { word, onWorkAddToQueue } = props;
   const [textCopied, setTextCopied] = useState(false);
   const onWorkPlaySound = ({ text }) => {
+    ReactGA.event({
+      category: "Words",
+      action: "play word",
+      label: text
+    });
     speakText(text);
   };
   const onWorkCopyText = ({ text }) => {
+    ReactGA.event({
+      category: "Words",
+      action: "copy word",
+      label: text
+    });
     copyText(text, () => {
       setTextCopied(true);
       setTimeout(() => {
