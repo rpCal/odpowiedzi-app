@@ -33,15 +33,16 @@ export const listOfWords = [
 
   // 03- narzedzia
 
-  { text: "drewno", image: "03-narzedzia/img_drewno.jpg" },
-  { text: "grzyby", image: "03-narzedzia/img_grzyby.jpg" },
-  { text: "miernik", image: "03-narzedzia/img_miernik.jpg" },
-  { text: "motocykl", image: "03-narzedzia/img_motocykl.jpg" },
-  { text: "sauna", image: "03-narzedzia/img_sauna.jpg" },
-  { text: "szczypce", image: "03-narzedzia/img_szczypce.jpg" },
-  { text: "wiertarka", image: "03-narzedzia/img_wiertarka.jpg" },
-  { text: "wiertło", image: "03-narzedzia/img_wiertlo.jpg" },
-
+  { text: "Drewno", image: "03-narzedzia/img_drewno.jpg" },
+  { text: "Grzyby", image: "03-narzedzia/img_grzyby.jpg" },
+  { text: "Miernik", image: "03-narzedzia/img_miernik.jpg" },
+  { text: "Motocykl", image: "03-narzedzia/img_motocykl.jpg" },
+  { text: "Sauna", image: "03-narzedzia/img_sauna.jpg" },
+  { text: "Szczypce", image: "03-narzedzia/img_szczypce.jpg" },
+  { text: "Wiertarka", image: "03-narzedzia/img_wiertarka.jpg" },
+  { text: "Klucz", image: "03-narzedzia/img_klucz.jpg" },
+  { text: "Przedłużacz", image: "03-narzedzia/img_przedluzacz.jpg" },
+  { text: "Szlifierka", image: "03-narzedzia/img_szlifierka.jpg" },
 
   // do opisania
   {
