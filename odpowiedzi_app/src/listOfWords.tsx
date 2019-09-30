@@ -24,6 +24,7 @@ export const listOfWords = [
   { text: "Tomek", image: "img_tomek.jpg" },
   { text: "Zuzia", image: "img_zuzia.jpg" },
   { text: "Adaś", image: "img_adas.jpg" },
+  { text: "Robert", image: "img_robert.jpg" },
   { text: "Oglądam telewizje", image: "img_ogladam_telewizje.jpg" },
   { text: "Barwy szczęscia", image: "img_barwy_szczescia.jpg" },
   { text: "M jak miłośc", image: "img_m_jak_milosc.jpg" },
