@@ -10,6 +10,8 @@ export const listOfWords = [
   { text: "Zostawiłem klucze", image: "img_zostawilem_klucze.jpg" },
   { text: "Jestem u kazika", image: "img_jestem_u_kazika.jpg" },
   { text: "Gram w pasjansa", image: "img_gram_w_pasjansa.jpg" },
+  { text: "Super", image: "img_super.jpg" },
+  { text: "Kocham Cie", image: "img_kocham_cie.jpg" },
   { text: "Dziękuje", image: "img_dziekuje.jpg" },
   { text: "Dobrze", image: "img_dobrze.jpg" },
   { text: "Układam kostke", image: "img_ukladam_kostke.jpg" },
@@ -26,10 +28,7 @@ export const listOfWords = [
   { text: "Barwy szczęscia", image: "img_barwy_szczescia.jpg" },
   { text: "M jak miłośc", image: "img_m_jak_milosc.jpg" },
   { text: "Wstawiłem ziemniaki", image: "img_wstawilem_ziemniaki.jpg" },
-  // { text: "Upiekłaś ciastka", image: "img_ukladam_kostke.jpg" },
   { text: "ziemniaki", image: "img_czy_obraz_ziemniaki.jpg" },
-  
-  // 03- narzedzia
   
   { text: "Układam drzewo", image: "03-narzedzia/img_drewno.jpg" },
   { text: "Zbieram grzyby", image: "03-narzedzia/img_grzyby.jpg" },
@@ -54,6 +53,7 @@ export const listOfWords = [
   { text: "Zakupy", image: "img_zakupy.jpg" },
   
   
+  // { text: "Upiekłaś ciastka", image: "img_ukladam_kostke.jpg" },
   // do opisania
   // { text: "Wiertarka", image: "img_wiertarka.jpg" },
   // {
