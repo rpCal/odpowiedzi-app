@@ -42,16 +42,16 @@ export const listOfWords = [
   { text: "Przedłużacz", image: "03-narzedzia/img_przedluzacz.jpg" },
   { text: "Szlifierka", image: "03-narzedzia/img_szlifierka.jpg" },
   { text: "O której będziesz?", image: "img_o_ktorej_bedziesz_zegarek.jpg" },
-  { text: "Zakupy", image: "img_zakupy.jpg" },
   { text: "Kosze trawe", image: "img_kosze_trawe.jpg" },
   { text: "Woże drzewo", image: "img_woze_drzewo.jpg" },
   { text: "Naprawiam motor", image: "img_naprawiam_motor.jpg" },
-  { text: "Spotkałem", image: "img_spotkalem.jpg" },
   { text: "Piła", image: "img_pila.jpg" },
   { text: "naprawiam samochód", image: "img_naprawiam_samochod.jpg" },
   { text: "Na papierosie", image: "img_papierosy.jpg" },
+  { text: "Spotkałem", image: "img_spotkalem.jpg" },
   { text: "Wracam o", image: "img_wracam_o.jpg" },
   { text: "Dzwonił", image: "img_dzwonil.jpg" },
+  { text: "Zakupy", image: "img_zakupy.jpg" },
   
   
   // do opisania
