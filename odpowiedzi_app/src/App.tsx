@@ -115,6 +115,7 @@ class App extends Component<{}, { speechEnabled: boolean; queueWords: any[] }> {
           <div>
             <h1>Przeglądarka nie obsłuje odpowiedzniego api!</h1>
             <h2>Potrzebny jest przynajmniej chrome 33+</h2>
+            <h3>ps. Możliwe że otwierasz link przez fb a nie przez chrome ;) </h3>
           </div>
         )}
       </div>

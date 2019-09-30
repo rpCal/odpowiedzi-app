@@ -28,13 +28,13 @@ export const listOfWords = [
   { text: "Barwy szczęscia", image: "img_barwy_szczescia.jpg" },
   { text: "M jak miłośc", image: "img_m_jak_milosc.jpg" },
   { text: "Wstawiłem ziemniaki", image: "img_wstawilem_ziemniaki.jpg" },
-  { text: "Upiekłaś ciastka", image: "img_ukladam_kostke.jpg" },
+  // { text: "Upiekłaś ciastka", image: "img_ukladam_kostke.jpg" },
   { text: "ziemniaki", image: "img_czy_obraz_ziemniaki.jpg" },
 
   // 03- narzedzia
 
-  { text: "Drewno", image: "03-narzedzia/img_drewno.jpg" },
-  { text: "Grzyby", image: "03-narzedzia/img_grzyby.jpg" },
+  { text: "Układam drzewo", image: "03-narzedzia/img_drewno.jpg" },
+  { text: "Zbieram grzyby", image: "03-narzedzia/img_grzyby.jpg" },
   { text: "Miernik", image: "03-narzedzia/img_miernik.jpg" },
   { text: "Motocykl", image: "03-narzedzia/img_motocykl.jpg" },
   { text: "Sauna", image: "03-narzedzia/img_sauna.jpg" },
@@ -43,24 +43,25 @@ export const listOfWords = [
   { text: "Klucz", image: "03-narzedzia/img_klucz.jpg" },
   { text: "Przedłużacz", image: "03-narzedzia/img_przedluzacz.jpg" },
   { text: "Szlifierka", image: "03-narzedzia/img_szlifierka.jpg" },
+  { text: "O której będziesz?", image: "img_o_ktorej_bedziesz_zegarek.jpg" },
+  { text: "Zakupy", image: "img_zakupy.jpg" },
+  { text: "Kosze trawe", image: "img_kosze_trawe.jpg" },
+  { text: "Woże drzewo", image: "img_woze_drzewo.jpg" },
+  { text: "Naprawiam motor", image: "img_naprawiam_motor.jpg" },
+  { text: "Spotkałem", image: "img_spotkalem.jpg" },
+  { text: "Wiertarka", image: "img_wiertarka.jpg" },
+  { text: "Piła", image: "img_pila.jpg" },
+  { text: "naprawiam samochód", image: "img_naprawiam_samochod.jpg" },
+  { text: "Na papierosie", image: "img_papierosy.jpg" },
+
 
   // do opisania
-  {
-    text: "Rodzina i znajomi",
-    image: "img_category_rodzina_i_znajomi.jpg"
-  },
-  { text: "Kategoria - Co robie?", image: "img_co_robie.jpg" },
-  { text: "Samochód", image: "img_naprawiam_samochod.jpg" },
-  { text: "O której będziesz?", image: "img_czesc.jpg" },
-  { text: "Jestem", image: "img_czesc.jpg" },
-  { text: "W garażu", image: "img_czesc.jpg" },
-  { text: "Na papierosu", image: "img_czesc.jpg" },
-  { text: "Wiertarka", image: "img_czesc.jpg" },
-  { text: "Piła", image: "img_czesc.jpg" },
-  { text: "Zakupy", image: "img_czesc.jpg" },
-  { text: "Niedlugo", image: "img_czesc.jpg" },
-  { text: "Woże drzewo", image: "img_czesc.jpg" },
-  { text: "Naprawiam motor", image: "img_czesc.jpg" },
-  { text: "Kosze trawe", image: "img_czesc.jpg" },
-  { text: "Spotkałem", image: "img_czesc.jpg" }
+  // {
+  //   text: "Rodzina i znajomi",
+  //   image: "img_category_rodzina_i_znajomi.jpg"
+  // },
+  // { text: "Kategoria - Co robie?", image: "img_co_robie.jpg" },
+  // { text: "Jestem", image: "img_czesc.jpg" },
+  // { text: "W garażu", image: "img_czesc.jpg" },
+  // { text: "Niedlugo", image: "img_czesc.jpg" },
 ];
