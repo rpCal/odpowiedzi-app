@@ -49,13 +49,13 @@ export const listOfWords = [
   { text: "Woże drzewo", image: "img_woze_drzewo.jpg" },
   { text: "Naprawiam motor", image: "img_naprawiam_motor.jpg" },
   { text: "Spotkałem", image: "img_spotkalem.jpg" },
-  { text: "Wiertarka", image: "img_wiertarka.jpg" },
   { text: "Piła", image: "img_pila.jpg" },
   { text: "naprawiam samochód", image: "img_naprawiam_samochod.jpg" },
   { text: "Na papierosie", image: "img_papierosy.jpg" },
-
-
+  
+  
   // do opisania
+  // { text: "Wiertarka", image: "img_wiertarka.jpg" },
   // {
   //   text: "Rodzina i znajomi",
   //   image: "img_category_rodzina_i_znajomi.jpg"
