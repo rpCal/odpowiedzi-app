@@ -1,15 +1,22 @@
 {
   "files": {
     "main.css": "/odpowiedzi-app/odpowiedzi_app/build/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/odpowiedzi-app/odpowiedzi_app/build/static/js/main.667aca9c.chunk.js",
-    "main.js.map": "/odpowiedzi-app/odpowiedzi_app/build/static/js/main.667aca9c.chunk.js.map",
-    "runtime~main.js": "/odpowiedzi-app/odpowiedzi_app/build/static/js/runtime~main.c5fd4092.js",
-    "runtime~main.js.map": "/odpowiedzi-app/odpowiedzi_app/build/static/js/runtime~main.c5fd4092.js.map",
-    "static/js/2.be5a731a.chunk.js": "/odpowiedzi-app/odpowiedzi_app/build/static/js/2.be5a731a.chunk.js",
-    "static/js/2.be5a731a.chunk.js.map": "/odpowiedzi-app/odpowiedzi_app/build/static/js/2.be5a731a.chunk.js.map",
+    "main.js": "/odpowiedzi-app/odpowiedzi_app/build/static/js/main.0e36a001.chunk.js",
+    "main.js.map": "/odpowiedzi-app/odpowiedzi_app/build/static/js/main.0e36a001.chunk.js.map",
+    "runtime-main.js": "/odpowiedzi-app/odpowiedzi_app/build/static/js/runtime-main.ea01bab6.js",
+    "runtime-main.js.map": "/odpowiedzi-app/odpowiedzi_app/build/static/js/runtime-main.ea01bab6.js.map",
+    "static/js/2.4c916f05.chunk.js": "/odpowiedzi-app/odpowiedzi_app/build/static/js/2.4c916f05.chunk.js",
+    "static/js/2.4c916f05.chunk.js.map": "/odpowiedzi-app/odpowiedzi_app/build/static/js/2.4c916f05.chunk.js.map",
     "index.html": "/odpowiedzi-app/odpowiedzi_app/build/index.html",
-    "precache-manifest.1d87ffbd7db7bc3579d3adac99fc29d8.js": "/odpowiedzi-app/odpowiedzi_app/build/precache-manifest.1d87ffbd7db7bc3579d3adac99fc29d8.js",
+    "precache-manifest.a34e345c41408a70f36004d09fad8dfb.js": "/odpowiedzi-app/odpowiedzi_app/build/precache-manifest.a34e345c41408a70f36004d09fad8dfb.js",
     "service-worker.js": "/odpowiedzi-app/odpowiedzi_app/build/service-worker.js",
-    "static/css/main.27fd15f6.chunk.css.map": "/odpowiedzi-app/odpowiedzi_app/build/static/css/main.27fd15f6.chunk.css.map"
-  }
+    "static/css/main.27fd15f6.chunk.css.map": "/odpowiedzi-app/odpowiedzi_app/build/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.4c916f05.chunk.js.LICENSE": "/odpowiedzi-app/odpowiedzi_app/build/static/js/2.4c916f05.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea01bab6.js",
+    "static/js/2.4c916f05.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.0e36a001.chunk.js"
+  ]
 }
