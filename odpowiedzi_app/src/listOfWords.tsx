@@ -13,6 +13,8 @@ export const listOfWords = [
   { text: "Super", image: "img_super.jpg" },
   { text: "Kocham Cie", image: "img_kocham_cie.jpg" },
   { text: "Dziękuje", image: "img_dziekuje.jpg" },
+  { text: "Wesołych świąt", image: "img_wesolych_swiat.jpg" },
+  { text: "Szczęśliwego nowego roku", image: "img_nowy_rok_2019.jpg" },
   { text: "Dobrze", image: "img_dobrze.jpg" },
   { text: "Układam kostke", image: "img_ukladam_kostke.jpg" },
   { text: "Kupiłem chleb", image: "img_kupilem_chleb.jpg" },
@@ -52,8 +54,6 @@ export const listOfWords = [
   { text: "Wracam o", image: "img_wracam_o.jpg" },
   { text: "Dzwonił", image: "img_dzwonil.jpg" },
   { text: "Zakupy", image: "img_zakupy.jpg" },
-  { text: "Wesołych świąt", image: "img_wesolych_swiat.jpg" },
-  { text: "Szczęśliwego nowego roku", image: "img_nowy_rok_2019.jpg" },
   
   // { text: "Upiekłaś ciastka", image: "img_ukladam_kostke.jpg" },
   // do opisania
